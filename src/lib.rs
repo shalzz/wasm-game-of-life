@@ -157,6 +157,11 @@ impl Universe {
         self.height = height;
         self.cells.clear();
     }
+
+    pub fn toggle_cell(&mut self, row: u32, column: u32) {
+        let idx = self.get_index(row, column);
+        self.cells.set(idx, !self.cells[idx]); // toggle the value of the cell
+    }
 }
 
 impl fmt::Display for Universe {
