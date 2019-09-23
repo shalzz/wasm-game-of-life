@@ -22,10 +22,7 @@ const ctx = canvas.getContext('2d');
 
 const renderLoop = () => {
   fps.render();
-    //universe.tick();
-  for (let i = 0; i < 9; i++) {
-    universe.tick();
-  }
+  universe.tick();
 
   drawCells();
 
