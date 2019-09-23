@@ -1,7 +1,7 @@
 <div align="center">
 
   <h1>Game of Life</h1>
-  <strong>Game of Life implementation using Rust, Javascript and WebAssembly!</strong>
+  <strong><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a> implementation using Rust, Javascript and WebAssembly!</strong>
 
 </div>
 
