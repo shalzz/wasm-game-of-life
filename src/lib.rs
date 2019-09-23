@@ -1,10 +1,8 @@
 mod utils;
-mod timer;
 
 use fixedbitset::FixedBitSet;
 use std::fmt;
 use wasm_bindgen::prelude::*;
-use timer::Timer;
 
 // A macro to provide `println!(..)`-style syntax for `console.log` logging.
 macro_rules! log {
@@ -103,7 +101,6 @@ impl Universe {
 #[wasm_bindgen]
 impl Universe {
     pub fn tick(&mut self) {
-        let _timer = Timer::new("Universe::tick");
         let mut next = self.cells.clone();
 
         for row in 0..self.height {
