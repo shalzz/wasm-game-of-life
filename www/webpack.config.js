@@ -9,6 +9,11 @@ module.exports = {
   },
   mode: "development",
   plugins: [
-    new CopyWebpackPlugin(['index.html'])
+      new CopyWebpackPlugin([
+          'index.html',
+          'index.js',
+          "../pkg/wasm_game_of_life.js",
+          "../pkg/wasm_game_of_life_bg.wasm"
+      ])
   ],
 };

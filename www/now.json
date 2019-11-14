@@ -1,0 +1,10 @@
+{
+    "name": "wasm-game-of-life",
+    "builds": [
+        { "src": "dist/*", "use": "@now/static" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "/dist/" }
+    ],
+    "version": 2
+}
