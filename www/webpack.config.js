@@ -10,6 +10,7 @@ module.exports = {
   mode: "development",
   plugins: [
       new CopyWebpackPlugin([
+          'now.json',
           'index.html',
           'index.js',
           "../pkg/wasm_game_of_life.js",
