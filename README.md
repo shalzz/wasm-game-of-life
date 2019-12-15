@@ -7,6 +7,8 @@
 
 ## About
 
+Try it out at <https://wasm-game-of-life.shalzz.now.sh>!
+
 ## Run
 
 Build the webassembly module with `wasm-pack build`
@@ -38,8 +40,21 @@ wasm-pack build
 wasm-pack test --headless --firefox
 ```
 
-### 🎁 Publish to NPM with `wasm-pack publish`
+### 🎁 Deploy
 
+1. Build the wasm module
 ```
-wasm-pack publish
+wasm-pack build
+```
+
+2. Bundle with our js and html
+```
+cd www
+npm run build
+```
+
+3. Deploy to @zeit/now
+```
+cd www/dist
+now
 ```
